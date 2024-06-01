@@ -98,6 +98,9 @@ public partial class Marker2DPlugin : EditorPlugin
 			}
 			else if (e.ButtonIndex == MouseButton.Left)
 			{
+				if(!pointSelected){
+					return false;
+				}
 				pointSelected = false;
 				UpdateOverlays();
 				return true;
