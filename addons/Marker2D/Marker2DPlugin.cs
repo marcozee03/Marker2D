@@ -57,7 +57,7 @@ public partial class Marker2DPlugin : EditorPlugin
 	{
 		points.Clear();
 		UpdateOverlays();
-		if (@object == null)
+		if (@object == null || @object is not Node2D)
 		{
 			return;
 		}
